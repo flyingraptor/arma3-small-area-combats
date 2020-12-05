@@ -1,0 +1,77 @@
+#include "guiDefinitions.hpp"
+#include "dialogGameSetupMenu.hpp"
+#include "dialogGameDisplays.hpp"
+
+respawn = BASE;
+respawnOnStart = 1;
+respawnDelay = 1;
+respawnDialog = 1;
+respawnTemplatesWest[] = {"MenuPosition", "MenuInventory"};
+respawnTemplatesEast[] = {"MenuPosition", "MenuInventory"};
+
+corpseManagerMode = 2;
+corpseRemovalMaxTime = 1200;
+
+aiKills = 1;
+
+class Header
+{
+	gameType = DM
+	minPlayers =  1;
+	maxPlayers =  8;
+}
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Draw";
+		subtitle = "Try harder next time";
+		description = "";
+		pictureBackground = "";
+	};
+};
+
+class CfgRespawnInventory
+{
+
+	class B_RifleMan
+	{
+		vehicle = "B_Soldier_F";
+	};
+
+	class B_AutoRifleman
+	{
+		vehicle = "B_Soldier_AR_F";
+	};
+
+	class B_Sapper
+	{
+		vehicle = "B_Soldier_mine_F";
+	};
+
+	class B_Marksman
+	{
+		vehicle = "B_sniper_F";
+	};
+
+	class O_RifleMan
+	{
+		vehicle = "O_Soldier_F";
+	};
+
+	class O_AutoRifleman
+	{
+		vehicle = "O_Soldier_AR_F";
+	};
+
+	class O_Sapper
+	{
+		vehicle = "O_Soldier_mine_F";
+	};
+
+	class O_Marksman
+	{
+		vehicle = "O_sniper_F";
+	};
+}
