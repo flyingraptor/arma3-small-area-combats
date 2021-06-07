@@ -5,7 +5,7 @@ if(gameStarted == true) then {
 	_baseDialogDisplay= findDisplay 1234;
 	_baseDialogDisplay closeDisplay 1;
 
-	/* Get from area list the selected number */
+	/* Get from area list the selected number of area size */
 	lastSelectedIndex = lbCurSel 1500;
 	playAreaRadious = lbData[1500, lastSelectedIndex];
 

@@ -38,6 +38,8 @@ publicVariable "globCampSettingMeters";
 globCampSettingMeters = "";
 publicVariable "globCampSettingMeters";
 
+loadedAreas = [];
+
 campDeath = "";
 "campDeath" addPublicVariableEventHandler { 
 	campDeath = _this select 1; 

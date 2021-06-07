@@ -104,15 +104,25 @@ class CloseAreaCombatDialog
 			w = 0.154687 * safezoneW;
 			h = 0.143 * safezoneH;
 		};
-		class drawShapeOnMapBtn: RscButton
+		class selectOnMapBtn: RscButton
 		{
 			idc = 1600;
-			text = "Draw Area"; //--- ToDo: Localize;
+			text = "Select Area"; //--- ToDo: Localize;
 			x = 0.418812 * safezoneW + safezoneX;
 			y = 0.67 * safezoneH + safezoneY;
 			w = 0.0825 * safezoneW;
 			h = 0.028 * safezoneH;
-			action = "execVM 'mapDrawCombatArea.sqf'";
+			action = "execVM 'loadAreas.sqf' execVM 'mapSelectArea.sqf'";
+		};
+		class drawShapeOnMapBtn: RscButton
+		{
+			idc = 1600;
+			text = "Custom Area"; //--- ToDo: Localize;
+			x = 0.508812 * safezoneW + safezoneX;
+			y = 0.67 * safezoneH + safezoneY;
+			w = 0.0825 * safezoneW;
+			h = 0.028 * safezoneH;
+			action = "execVM 'mapDrawCustomArea.sqf'";
 		};
 		class playBtn: RscButton
 		{
