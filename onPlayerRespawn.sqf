@@ -1,23 +1,6 @@
 campingTimerInProgress = false;
 
 player removeAction 0;
-player addAction
-[
-	"Virtual Arsenal",	// title
-	{
-		["Open", true] spawn BIS_fnc_arsenal;
-	},
-	nil,		// arguments
-	1.5,		// priority
-	false,		// showWindow
-	true,		// hideOnUse
-	"",			// shortcut
-	"true", 	// condition
-	50,			// radius
-	false,		// unconscious
-	"",			// selection
-	""			// memoryPoint
-];
 
 if(isServer && hasInterface) then
 {

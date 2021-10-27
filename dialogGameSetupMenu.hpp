@@ -104,21 +104,11 @@ class CloseAreaCombatDialog
 			w = 0.154687 * safezoneW;
 			h = 0.143 * safezoneH;
 		};
-		class selectOnMapBtn: RscButton
-		{
-			idc = 1600;
-			text = "Select Area"; //--- ToDo: Localize;
-			x = 0.418812 * safezoneW + safezoneX;
-			y = 0.67 * safezoneH + safezoneY;
-			w = 0.0825 * safezoneW;
-			h = 0.028 * safezoneH;
-			action = "execVM 'loadAreas.sqf' execVM 'mapSelectArea.sqf'";
-		};
 		class drawShapeOnMapBtn: RscButton
 		{
 			idc = 1600;
-			text = "Custom Area"; //--- ToDo: Localize;
-			x = 0.508812 * safezoneW + safezoneX;
+			text = "Draw Combat Area"; //--- ToDo: Localize;
+			x = 0.418812 * safezoneW + safezoneX;
 			y = 0.67 * safezoneH + safezoneY;
 			w = 0.0825 * safezoneW;
 			h = 0.028 * safezoneH;
@@ -133,7 +123,7 @@ class CloseAreaCombatDialog
 			w = 0.0825 * safezoneW;
 			h = 0.028 * safezoneH;
 			action = "execVM 'play.sqf'";
-		};
+		}; 	
 		/////////////////////////////////////////////////////////////////////
 		////////////////////////////////////////////////////////
 		// GUI EDITOR OUTPUT END

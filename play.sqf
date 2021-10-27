@@ -1,7 +1,6 @@
 if(isServer && hasInterface) then {
 	_markerPlayAreaPos = getMarkerPos "markerPlayArea";
 
-	//TODO: Replace this part with random selection from the predefined
 	playAreaRadiousNum = 0;
 	if(0 == (_markerPlayAreaPos select 0)) then {
 
@@ -10,7 +9,7 @@ if(isServer && hasInterface) then {
 
 		/* Set the area position */
 		deleteMarker "markerPlayArea";
-		playAreaPosition = [23695,17789.6,0];
+		playAreaPosition = [nil, ["water"]] call BIS_fnc_randomPos;
 		playArea = createMarker ["markerPlayArea", playAreaPosition]; 
 		playArea setMarkerShape "ELLIPSE";
 		playArea setMarkerColor "ColorRed"; 

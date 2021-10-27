@@ -1,9 +1,9 @@
 _markerWest = "respawn_west";
-createMarker [_markerWest, [14782.9,16610.3,0]]; //Base Coordinates
+createMarker [_markerWest, [14261.3,16285.4,0]]; //Base Coordinates
 _markerWest setMarkerSize [5,5];
 
 _markerEast = "respawn_east";
-createMarker [_markerEast, [11543,11698.8,0]]; //Base Coordinates
+createMarker [_markerEast, [11585.2,11948.6,0]]; //Base Coordinates
 _markerEast setMarkerSize [5,5];
 
 playAreaRadious = "";	
